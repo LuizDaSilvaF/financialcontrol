@@ -1,6 +1,8 @@
 <template>
   <Sidebar />
-
+  <main class="container-main">
+    <RouterView/>
+  </main>
 </template>
 
 <script>
@@ -31,5 +33,8 @@ export default {
   --white-color: #FFF;
   --stroke-color: #00556f;
   --hover-color: #00546e;
+}
+.container-main{
+  padding: 60px 30px 30px min(280px, 19.44vw);
 }
 </style>

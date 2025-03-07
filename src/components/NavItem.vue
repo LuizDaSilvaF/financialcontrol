@@ -1,7 +1,7 @@
 <template>
-  <a class="nav-link" :href="link">
+  <RouterLink class="nav-link" :to="link">
       <slot></slot>
-  </a>
+  </RouterLink>
 </template>
 
 <script>
