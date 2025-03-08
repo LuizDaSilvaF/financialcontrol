@@ -1,5 +1,7 @@
 <template>
   <Sidebar />
+  <TheHeader/>
+
   <main class="container-main">
     <RouterView/>
   </main>
@@ -8,11 +10,13 @@
 <script>
 // Components
 import Sidebar from "./components/Sidebar.vue";
+import TheHeader from "./components/TheHeader.vue";
 
 export default {
   name: "App",
   components: {
     Sidebar,
+    TheHeader
   }
 };
 </script>
@@ -33,8 +37,15 @@ export default {
   --white-color: #FFF;
   --stroke-color: #00556f;
   --hover-color: #00546e;
+  --bg-transparent-black: #00000010;
 }
 .container-main{
   padding: 60px 30px 30px min(280px, 19.44vw);
+}
+button{
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
 }
 </style>

@@ -7,28 +7,28 @@
     <nav class="navigation">
       <ul class="nav-list">
         <li class="nav-items">
-          <NavItem class="nav-link active-link" :link="'/'" @click="activeLink">
+          <NavItem class="nav-link active-link" :link="''" @click="activeLink">
             <LayoutPanelLeft />
             Dashboard
           </NavItem>
         </li>
 
         <li class="nav-items">
-          <NavItem class="nav-link" :link="'#'" @click="activeLink">
+          <NavItem class="nav-link" :link="'summary'" @click="activeLink">
             <FileText />
             Summary
           </NavItem>
         </li>
 
         <li class="nav-items">
-          <NavItem class="nav-link" :link="'#'" @click="activeLink">
+          <NavItem class="nav-link" :link="'records'" @click="activeLink">
             <NotebookText />
             Records
           </NavItem>
         </li>
 
         <li class="nav-items">
-          <NavItem class="nav-link" :link="'#'" @click="activeLink">
+          <NavItem class="nav-link" :link="'settings'" @click="activeLink">
             <Settings />
             Settings
           </NavItem>
